@@ -1,41 +1,150 @@
-/* Reset some default styles */
-body,
-html {
-    margin: 0;
-    padding: 0;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #222;
+  color: #fff;
 }
 
-/* Basic styling for the header */
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0;
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Style for projects section */
-.projects {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+.header-text {
+  /* flex-grow: 1; */
+  /* Allow text to take available space */
+  text-align: center;
+  margin-right: 20px;
 }
 
-.project {
-    margin-bottom: 30px;
-    border: 1px solid #ccc;
-    padding: 15px;
+.header-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
-/* Style for project images */
-.project img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.icon-button {
+  display: inline-block;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
 }
 
-/* Style for footer */
+.icon-button:hover {
+  color: #007bff;
+}
+
+/* header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #333;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #aaa;
+} */
+
+main {
+  padding: 20px;
+}
+
+.avatar-icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* Clips the image to the circle */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#projects .project {
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  display: flex;
+}
+
+#projects .project .header {
+  flex-grow: 1;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .project .header .button {
+  margin-top: auto;
+  width: max-content;
+}
+
+#projects .project h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+#projects .project h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#projects .project p {
+  color: #aaa;
+}
+
+#projects .project a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+#projects .project a:hover {
+  background-color: #0056b3;
+}
+
+#projects .view-more {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: span 2;
+}
+
+#skills ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #111;
+  color: #aaa;
+  /* width: 100%; */
+  margin: 0 auto;
 }
