@@ -95,6 +95,7 @@ main {
 
 #projects .project .header .actions {
   margin-top: auto;
+  height: max-content;
   width: max-content;
 }
 
