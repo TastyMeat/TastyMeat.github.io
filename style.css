@@ -93,7 +93,7 @@ main {
   flex-direction: column;
 }
 
-#projects .project .header .button {
+#projects .project .header .actions {
   margin-top: auto;
   width: max-content;
 }
@@ -149,4 +149,32 @@ footer {
   color: #aaa;
   /* width: 100%; */
   margin: 0 auto;
+}
+
+.game-header {
+  text-decoration: none;
+
+  width: 100%;
+}
+
+.game-header a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.game-header h2 {
+  text-align: center;
+}
+
+.game-header .spacer {
+  visibility: hidden;
+  padding-right: 20px;
+}
+
+
+.game-embed {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
