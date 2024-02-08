@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenHao Wong - Portfolio</title>
+    <link rel="icon"
+        href="https://avatars.githubusercontent.com/u/65907415?s=400&u=d3e0ffd6b3b3c76ce43de42efa27d5dc6e88d295&v=4"
+        type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <script defer type="module" src="pokemon.js"></script>
+</head>
+
+<body>
+    <header>
+        <table class="game-header">
+            <tr>
+                <td>
+                    <a href="../index.html">&larr; Home</a>
+                </td>
+                <td>
+                    <h2>Pokemon API Test</h2>
+                </td>
+                <td class="spacer">Next &rarr;</td>
+            </tr>
+        </table>
+        <div class="game-header">
+        </div>
+    </header>
+    <main>
+        <div class="game-embed">
+            <b> Search Pokemon: </b>
+        </div>
+        <div class="game-embed">
+            <form id="form" method="get">
+                <label for="pokemon_name">Name: </label>
+                <input type="text" id="pokemon_name" placeholder="Pikachu" required>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+        <br>
+        <div class="game-embed">
+            <b> Abilities </b>
+        </div>
+        <div class="game-embed">
+            <ul id="pokemon_data"></ul>
+        </div>
+    </main>
+    <!-- <footer>
+        <p>&copy; 2024 RenHao Wong</p>
+    </footer> -->
+
+
+</body>
+
+</html>
