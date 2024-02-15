@@ -2,6 +2,7 @@ import express from "express"
 import cors from "cors"
 
 const app = express();
+const router = express.Router();
 
 app.use(cors());
 
@@ -33,7 +34,15 @@ app.get("/generation", async (request, response) => {
     }
 });
 
-app.listen(3000, () => console.log("server at port 3000"));
+
+
+app.listen(3000, () => {
+    const a: string = '';
+    const b: number = 1;
+
+    console.log('yeet1 ' + (typeof a === 'string'));
+    console.log('yeet2 ' + (typeof b === 'string'));
+});
 
 //type and interface
 
@@ -44,6 +53,16 @@ app.listen(3000, () => console.log("server at port 3000"));
 // const v:Ren = {
 //     age: 'ren'
 // }
+
+const arr = ["1", "2", "3", "4"] as const;
+
+type k<T extends typeof arr[number]> = {
+    age: T;
+}
+
+const e: k<"1"> = {
+    age: "1"
+}
 
 
 
